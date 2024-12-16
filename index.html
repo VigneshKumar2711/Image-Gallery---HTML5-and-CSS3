@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="fade-in"> React Image Gallery</h1>
+    <div class="image-container fade-in">
+        <figure class="image-item">
+            <img src="./Images/Image1.png" alt="Image 1" class="clickable-image slide-in" onclick="openImage(this)">
+            <figcaption>Brown and White Short Coated Puppy
+            </figcaption>
+        </figure>
+        <figure class="image-item">
+            <img src="./Images/Image2.png" alt="Image 2" class="clickable-image slide-in" onclick="openImage(this)">
+            <figcaption>Adult German Shepherd Lying on Ground
+            </figcaption>
+        </figure>
+        <figure class="image-item">
+            <img src="./Images/Image3.png" alt="Image 3" class="clickable-image slide-in" onclick="openImage(this)">
+            <figcaption>Adult Labrador Lying on Ground</figcaption>
+        </figure>
+        <figure class="image-item">
+            <img src="./Images/Image4.png" alt="Image 4" class="clickable-image slide-in" onclick="openImage(this)">
+            <figcaption>Adult Labrador Retriever with happy face</figcaption>
+        </figure>
+        <figure class="image-item">
+            <img src="./Images/Image5.png" alt="Image 5" class="clickable-image slide-in" onclick="openImage(this)">
+            <figcaption>Beagle Puppy with Pity face</figcaption>
+        </figure>
+        <figure class="image-item">
+            <img src="./Images/Image6.png" alt="Image 6" class="clickable-image slide-in" onclick="openImage(this)">
+            <figcaption>Siberian Husky with Happyy Face</figcaption>
+        </figure>
+        <figure class="image-item">
+            <img src="./Images/Image7.png" alt="Image 7" class="clickable-image slide-in" onclick="openImage(this)">
+            <figcaption>Pug with Sad Face</figcaption>
+        </figure>
+        <figure class="image-item">
+            <img src="./Images/Image8.png" alt="Image 8" class="clickable-image slide-in" onclick="openImage(this)">
+            <figcaption>Rotweiler with Happiness on his face</figcaption>
+        </figure>
+    </div>
+
+    <div id="imageModal" class="modal fade-in" onclick="closeImage()">
+        <img id="modalImage" src="" alt="Full-size Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
